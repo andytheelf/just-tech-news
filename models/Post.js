@@ -1,5 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+const router = require('express').Router();
+const { Post, User } = require('../../models');
+touch post - routes.js
 
 // create our Post model
 class Post extends Model {}
