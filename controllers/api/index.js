@@ -4,6 +4,9 @@ const userRoutes = require('./user-routes');
 const postRoutes = require('./post-routes');
 const Vote = require('./Vote');
 const commentRoutes = require('./comment-routes');
+const homeRoutes = require('./home-routes.js');
+
+router.use('/', homeRoutes);
 
 router.use('/comments', commentRoutes);
 
